@@ -17,17 +17,22 @@ export class AppComponent {
     {
       id:1,
       heading:"Step 1",
-      subheading:"This is step 1"
+      subheading:"This is step 1",
+      button:true
     },
     {
       id:2,
       heading:"Step 2",
-      subheading:"This is step 2"
+      subheading:"This is step 2",
+      button:true
+
     },
     {
       id:3,
       heading:"Step 3",
-      subheading:"This is step 3"
+      subheading:"This is step 3",
+      button:true
+
     },
     {
       id:4,
