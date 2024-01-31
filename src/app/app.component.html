@@ -1,0 +1,52 @@
+<!-- <h2>App-component aan ith</h2>
+<app-wizard>
+  <h1>Ivide aan ng conent</h1>
+</app-wizard> -->
+
+<div class="main-section">
+
+  <!--  -->
+
+                  <!-- <div class="round-icons" style="margin-top: 10em;">
+                    <span class="round-tab" style="margin-left: 5em;" (click)="changeIndex(0)">
+                      <i class="glyphicon glyphicon-folder-open"></i>
+                    </span>
+                    <span class="round-tab" style="margin-left: 10em;" (click)="changeIndex(1)">
+                      <i class="glyphicon glyphicon-folder-open"></i>
+                    </span>
+                    <span class="round-tab" style="margin-left: 15em;" (click)="changeIndex(2)">
+                      <i class="glyphicon glyphicon-folder-open"></i>
+                    </span>
+                    <span class="round-tab" style="margin-left: 20em;" (click)="changeIndex(3)">
+                      <i class="glyphicon glyphicon-folder-open"></i>
+                    </span>
+                  </div> -->
+
+
+
+
+           
+
+
+</div>
+            
+<app-wizard class="wizard-component">
+  <div *ngFor="let wizard of wizardData;let idx = index">
+
+
+    <div class="round-icons" style="margin-top: 10em;">
+      <span class="round-tab" style="margin-left: 5em;" (click)="changeIndex(idx)">
+        <i class="glyphicon glyphicon-folder-open"></i>
+      </span>
+    </div>
+
+    <!-- <p>{{idx}}</p>   -->
+    <div style="margin-top: 10em;" *ngIf="idx==wizardId && indexArray.has(wizardId)">
+      <p>{{wizardData[wizardId].heading}}</p>
+      <p> {{wizardData[wizardId].subheading}}</p>
+    </div>
+   
+  </div>
+</app-wizard>
+  <!--  -->
+
