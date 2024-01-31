@@ -46,7 +46,10 @@
       <p>{{wizardData[wizardId].heading}}</p>
       <p> {{wizardData[wizardId].subheading}}</p>
     </div>
-   
+    <div style="margin-top: 1em;" *ngIf="idx==wizardId && indexArray.has(wizardId) && wizardData[idx].button">
+      <button (click)="[changeIndex(idx)]">Save and Continue</button>
+    </div>
+      
   </div>
 </app-wizard>
   <!--  -->
